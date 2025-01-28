@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+
+        body {
+            overflow-y: auto; /* Allow vertical scrolling */
+        }
+    </style>
+</head>
+<body class="text-gray-200 bg-black">
+    <header class="bg-gray-800 shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">Tejush Tanay</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-green-500">About</a></li>
+                    <li><a href="#projects" class="hover:text-green-500">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-green-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold mb-4">I am a Computer Science and Engineering (CSE) major specializing in Artificial Intelligence and Machine Learning. With a passion for solving complex problems, I focus on developing innovative solutions and leveraging AI technologies to create impactful systems.</h2>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-icon bg-gray-700 p-4 rounded-lg shadow-md">
+                    <div class="project-card">
+                        <h3 class="text-xl font-bold mb-2">Project 1</h3>
+                        <p class="text-sm mb-4">Short description of the project.</p>
+                        <a href="https://github.com/project-1" target="_blank" class="text-green-500 hover:underline">View More</a>
+                    </div>
+                </div>
+                <div class="project-icon bg-gray-700 p-4 rounded-lg shadow-md">
+                    <div class="project-card">
+                        <h3 class="text-xl font-bold mb-2">Project 2</h3>
+                        <p class="text-sm mb-4">Short description of the project.</p>
+                        <a href="https://github.com/project-2" target="_blank" class="text-green-500 hover:underline">View More</a>
+                    </div>
+                </div>
+                <div class="project-icon bg-gray-700 p-4 rounded-lg shadow-md">
+                    <div class="project-card">
+                        <h3 class="text-xl font-bold mb-2">Project 3</h3>
+                        <p class="text-sm mb-4">Short description of the project.</p>
+                        <a href="https://github.com/project-3" target="_blank" class="text-green-500 hover:underline">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+            <p class="text-lg mb-8">Feel free to reach out via the button below or connect with me on GitHub and LinkedIn.</p>
+            <button onclick="showPopup()" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Contact Me</button>
+            <div class="flex justify-center mt-6 space-x-6">
+                <!-- GitHub Icon -->
+                <a href="https://github.com/tanaytejush" target="_blank" class="text-gray-300 hover:text-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.599.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.084 1.839 1.236 1.839 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.419-1.305.763-1.605-2.665-.305-5.467-1.332-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.125-.303-.535-1.523.115-3.176 0 0 1.01-.323 3.31 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.3-1.553 3.31-1.23 3.31-1.23.65 1.653.24 2.873.115 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.62-5.475 5.92.43.372.815 1.102.815 2.22 0 1.606-.015 2.898-.015 3.293 0 .32.22.694.825.576C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/tejush-tanay-305926279/" target="_blank" class="text-gray-300 hover:text-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.762 0-5 2.238-5 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.762-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.5c-.966 0-1.5-.757-1.5-1.5 0-.743.534-1.5 1.5-1.5s1.5.757 1.5 1.5c0 .743-.534 1.5-1.5 1.5zm13.5 11.5h-3v-5.5c0-1.381-.469-2.33-1.638-2.33-.894 0-1.423.602-1.656 1.182-.086.209-.108.5-.108.791v5.857h-3v-10h3v1.305c.396-.61 1.105-1.482 2.695-1.482 1.961 0 3.426 1.28 3.426 4.032v6.145z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="popup" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center hidden">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold mb-4">Reach Out!</h3>
+            <p>Email: <a href="mailto:tanaytejush@gmail.com" class="text-green-500 hover:underline">tanaytejush@gmail.com</a></p>
+            <button onclick="closePopup()" class="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Close</button>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-gray-400 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Tejush Tanay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showPopup() {
+            document.getElementById('popup').classList.remove('hidden');
+        }
+
+        function closePopup() {
+            document.getElementById('popup').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

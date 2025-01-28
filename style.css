@@ -1,0 +1,47 @@
+/* General Body Styling */
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Enable Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+/* Project Icon Styling */
+.project-icon {
+    perspective: 1000px;
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.project-icon:hover {
+    transform: rotateY(25deg);
+    box-shadow: 0 8px 15px rgba(0, 255, 0, 0.5);
+}
+
+/* Project Card Styling */
+.project-card {
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.project-card:hover {
+    transform: rotateY(15deg);
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.5);
+}
+
+/* Hide Scrollbars (Optional) */
+.hidden-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+    display: none; /* WebKit Browsers */
+}
