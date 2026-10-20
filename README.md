@@ -33,3 +33,8 @@ The layout and styling are in place. The project cards still contain placeholder
 ## About me
 
 Computer Science graduate focused on AI/ML and computer vision. See my other repositories at [github.com/tanaytejush](https://github.com/tanaytejush).
+
+
+---
+
+<sub>Made by [tanaytejush](https://github.com/tanaytejush)</sub>
